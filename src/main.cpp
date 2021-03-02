@@ -1,4 +1,3 @@
-
 #define _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS // yaml-cpp gives deprecation warnings with c++17 compiler
 
 #include <string>
@@ -28,7 +27,7 @@
 #include "PiecewiseFunction.h"
 #include "GLObjects.h"
 
-// Injecting a conversion template specialization for glm stuffs for YAML parsing
+// Injecting a conversion template specialization for glm stuff for YAML parsing
 namespace YAML {
 	template<>
 	struct convert<glm::vec3> 
